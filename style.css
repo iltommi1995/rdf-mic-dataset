@@ -2,9 +2,26 @@
 
 h1 {
   text-align: center;
+  margin-bottom: 50px;
 }
 
-#table {
+/* MENU */
+
+nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.table {
   width: 60%;
   height: 400px;
   display: grid;
@@ -13,6 +30,10 @@ h1 {
   gap: 5px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.xcel {
+  width: 80%;
 }
 
 .header {
