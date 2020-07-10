@@ -5,6 +5,10 @@ h1 {
   margin-bottom: 50px;
 }
 
+body {
+  margin-bottom: 50px;
+}
+
 /* MENU */
 
 nav {
@@ -23,7 +27,7 @@ h2 {
 
 .table {
   width: 60%;
-  height: 400px;
+  min-height: 300px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row: 10% repeat(3, 1fr);
@@ -34,6 +38,7 @@ h2 {
 
 .xcel {
   width: 80%;
+  margin-bottom: 50px;
 }
 
 .header {
@@ -58,4 +63,24 @@ h2 {
 
 .download {
   justify-content: center;
+}
+
+.text > p {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link_img {
+  width: 100px;
+}
+
+.pipeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
 }

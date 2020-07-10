@@ -13,38 +13,46 @@
     <h1>RDF TRIPLE STORE MIC</h1>
 
     <nav>
-      <a href="home.html">Output</a>
+      <a href="home.html">Home</a>
       <a href="xcel_e_csv.html">Xcel e CSV</a>
       <a href="trasformazioni.html">Trasformazioni</a>
+      <a href="output.html">Output</a>
     </nav>
 
-    <h2>OUTPUT</h2>
-
-    <div class="table">
-      <div class="header">
-        <p>formato</p>
-      </div>
-      <div class="header">
-        <p>link download</p>
-      </div>
-      <div class="content">
-        <a href="/output/MIC_Film_Output.n3">Ontologia film mic in .n3</a>
-      </div>
-      <div class="content download">
-        <a href="/output/MIC_Film_Output.n3" download>Download</a>
-      </div>
-      <div class="content">
-        <a href="/output/MIC_Film_Output.nt">Ontologia film mic in .nt</a>
-      </div>
-      <div class="content download">
-        <a href="/output/MIC_Film_Output.nt" download>Download</a>
-      </div>
-      <div class="content">
-        <a href="/output/MIC_Film_Output.ttl">Ontologia film mic in .ttl</a>
-      </div>
-      <div class="content download">
-        <a href="/output/MIC_Film_Output.ttl" download>Download</a>
-      </div>
+    <h2>ABSTRACT</h2>
+    <div class="text">
+      <p>
+        Lo scopo di questo progetto è l'arricchimento dei dati dell'archivio del
+        MIC, in seguito al mapping RDF del suddetto su Datagraft. Per prima cosa
+        abbiamo ripulito il file.xlsx cercando di renderlo il più possibile
+        omogeneo e facile da manipolare. Abbiamo eseguito il mapping con
+        Datagraft, poi abbiamo eseguito il linking con SILK tra il nostro
+        dataset e quello di DBpedia. Infine, con Jena Fuseki abbiamo consultato
+        il dataset attraverso delle SPARQL queries.
+      </p>
+      <p>
+        Tutte le fasi del progetto sono state trattate approfonditamente in
+        <a href="/power_point/Presentazione_MIC_Film.pptx"
+          >questa presentazione PowerPoint</a
+        >.
+      </p>
+    </div>
+    <div class="pipeline">
+      <a href="/xcel_e_csv.html">
+        <img src="/img/raw_data.jpg" class="link_img" />
+      </a>
+      <a href="/xcel_e_csv.html">
+        <img src="/img/excel.png" class="link_img" />
+      </a>
+      <a href="/trasformazioni.html">
+        <img src="/img/datagraft.jpg" class="link_img" />
+      </a>
+      <a href="#">
+        <img src="/img/silk.jpg" class="link_img" />
+      </a>
+      <a href="#">
+        <img src="/img/jena.png" class="link_img" />
+      </a>
     </div>
   </body>
 </html>

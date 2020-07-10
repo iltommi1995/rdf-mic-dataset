@@ -10,9 +10,10 @@
     <h1>RDF TRIPLE STORE MIC</h1>
 
     <nav>
-      <a href="home.html">Output</a>
+      <a href="home.html">Home</a>
       <a href="xcel_e_csv.html">Xcel e CSV</a>
       <a href="trasformazioni.html">Trasformazioni</a>
+      <a href="output.html">Output</a>
     </nav>
 
     <h2>TRASFORMAZIONI DATGRAFT</h2>
@@ -25,17 +26,70 @@
         <p>seconda trasformazione</p>
       </div>
       <div class="content">
-        <p>Descrizione prima trasformazione</p>
+        <ol>
+          <li>
+            Creazione degli header, tramite Make dataset > Use the first row as
+            header
+          </li>
+          <li>
+            Divisione della colonna “Regia” e della colonna “Nazione”,
+            applicando Split column a ciascuna delle due
+          </li>
+          <li>
+            Esecuzione di Reshape dataset, con l’applicazione della funzione
+            Melt alle colonne non splittate (eccetto “Nazione”)
+          </li>
+          <li>
+            Take columns, selezionando value; rimozione delle colonne listed
+          </li>
+          <li>
+            Cambio di nome alla colonna risultante dal passo IV (“value”) in
+            “Nazioni”, tramite Rename columns
+          </li>
+          <li>
+            Applicazione di Filter rows su “Nazioni”, tramite la funzione
+            not-empty
+          </li>
+          <li>
+            Applicazione di Reshape dataset alle colonne relative a “Regia”
+          </li>
+          <li>
+            Cambio di nome alla colonna risultante dal passo VII (“value”) in
+            “Registi”, tramite Rename columns
+          </li>
+          <li>
+            Applicazione di Filter rows su “Registi”, tramite la funzione
+            not-empty
+          </li>
+          <li>
+            Take columns, selezionando value; rimozione delle colonne listed
+          </li>
+          <li>
+            Esecuzione di Map columns sulle colonne “Anno”, “N”, “Titolo”,
+            “Nazioni” e “Registi”, tramite la funzione Trim
+          </li>
+          <li>Esecuzione del Tabular enrichment</li>
+        </ol>
       </div>
       <div class="content">
-        <p>Descrizione seconda trasformazione</p>
+        <ol>
+          <li>Esecuzione di Make dataset > Use the first row as header</li>
+          <li>
+            In seguito i mapping RDF, per i quali rimandiamo alla
+            <a href="/power_point/Presentazione_MIC_Film.pptx"
+              >presentazione PowerPoint</a
+            >.
+          </li>
+        </ol>
       </div>
       <div class="content">
-        <p>Si trova su DataGraft</p>
+        <a href="trasformazioni/MIC_Film_trasformazione_1.rar" download
+          >Download MIC_Film_trasformazione_1.jar</a
+        >
       </div>
       <div class="content">
-        <a href="trasformazioni/MIC_Film_trasformazione.rar" download
-          >Download MIC_Film_trasformazione.jar</a
+        <a href="trasformazioni/MIC_Film_trasformazione_2.rar" download
+          >Download MIC_Film_trasformazione_2.jar</a
         >
       </div>
     </div>
